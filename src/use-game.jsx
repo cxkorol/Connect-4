@@ -72,8 +72,14 @@ const reducer = (state, action) => {
       }
     case 'updateMessage':
       return {
-        ...state,
-        message: action.message,
+        prev: {
+          ...state.current,
+        },
+        current: {
+          ...state.current,
+          message: action.message,
+        },
+        isStepBack: false,
       }
     default:
       throw Error(`Action "${action.type}" is not a valid action.`)
