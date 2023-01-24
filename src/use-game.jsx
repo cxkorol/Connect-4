@@ -128,7 +128,7 @@ export function useGame() {
     // Check status of board
     const result = checkForWin(board)
 
-    // Player 1  wins
+    // Player 1 wins
     if (result === state.current.player1) {
       clearPersitedStorage()
       return dispatch({

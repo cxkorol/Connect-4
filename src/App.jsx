@@ -1,6 +1,5 @@
 import { Game } from './game'
 import * as ThemeUI from 'theme-ui'
-import { alignContent, width } from 'styled-system'
 
 function App() {
   return (
